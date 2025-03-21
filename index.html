@@ -12,6 +12,8 @@
             color: #e6e6e6;
             height: 100%;
             overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
         }
 
         /* Header Styles */
@@ -62,6 +64,14 @@
             padding: 50px 20px;
         }
 
+        .home-section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Centers the image */
+        }
+
+
         .about-section, .contact-section {
             background: #4b2e17;
             padding: 50px 20px;
@@ -110,6 +120,20 @@
             .gallery-grid {
                 grid-template-columns: 1fr; /* 1 image per row for small screens */
             }
+            #header {
+                align-items: center;
+                text-align: center;
+                padding: 10px;
+            }
+
+            #navbar {
+                display: flex;
+                padding: 10px 20px;
+            }
+
+            #navbar li {
+                padding: 10px 5px;
+            }
         }
     </style>
 </head>
@@ -120,7 +144,7 @@
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </section>
 
