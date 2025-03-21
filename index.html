@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boi</title>
+    <style>
+        body, html {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #5c3c1c; /* Brown Background */
+            color: #e6e6e6;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #3e2a14;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        #navbar{
+            display: flex;
+            align-items: center;
+            padding: 10px 30px;
+        } 
+
+        #navbar li{
+            padding: 0 20px;
+            list-style: none;
+        }
+
+        #navbar li a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+
+        #navbar li a:hover,
+        #navbar li a.active{
+            color: #ffddaa;
+        }
+
+        header {
+            text-align: center;
+            padding: 5px;
+            background: #3e2a14;
+        }
+
+        .home-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about-section, .contact-section {
+            background: #4b2e17;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* Gallery Styles */
+        .gallery-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ffddaa;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e6c08b;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr; /* 1 image per row for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="Images/logo.jpg" alt="BOI Logo" height="100px" width="100px"/></a>
+        <ul id="navbar">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <section id="home" class="home-section">
+        <img src="Images/Dancing_Boi.png" alt="Dancing BOI" class="animate">
+        <div>
+            <h2>Welcome to Boi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi inventore cupiditate qui nobis aspernatur officia mollitia hic, quam facilis ex. Mollitia, in labore. Placeat id animi odit ducimus minima optio autem quas rerum? Deleniti necessitatibus saepe similique tempora, illum iusto optio. Eius fugiat a ullam earum nisi officiis minima?</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Boi</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti earum labore libero odio officiis reprehenderit fugit iusto error deserunt in? Quia odio ullam molestias autem unde maiores accusantium, similique mollitia maxime magnam exercitationem, soluta vel laboriosam? Error nostrum dicta modi sequi, a sunt vero cumque est, mollitia quibusdam neque voluptate.</p>
+        <li>Community Driven</li>
+        <li>Decentralized</li>
+        <li>Fun and Engaging</li>
+        <br>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/Cute_Bear_1000.gif" alt="Boi Meme">
+            <img src="images/Boi_Factory.webp" alt="Boi Meme">
+            <img src="images/Boi_Blub.webp" alt="Boi Meme">
+            <img src="images/Boi_Bomber.webp" alt="Boi Meme">
+            <img src="images/Boi_Evolution.webp" alt="Boi Meme">
+            <img src="images/Boi_Rollin.webp" alt="Boi Meme">
+            <img src="images/Boi_Shopaholic.webp" alt="Boi Meme">
+            <img src="images/Hulk_Boi.webp" alt="Boi Meme">
+            <img src="images/M6_With_Hair_text_1000.gif" alt="Boi Meme">
+            <img src="images/M9_1000.gif" alt="Boi Meme">
+            <img src="images/TMNT_Boi2.webp" alt="Boi Meme">
+            <img src="images/Toy_Boi.webp" alt="Boi Meme">
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>For inquiries, partnerships, or just to say hi, reach out to us!</p>
+        <p>Email: support@babyluna.com</p>
+        <p>Join our community:</p>
+        <a href="" class="cta-button">Twitter</a>
+        <a href="" class="cta-button">Telegram</a>
+    </section>
+</body>
+</html>
